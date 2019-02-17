@@ -1,0 +1,36 @@
+{
+  "name": "sql-library-manager-project-8-fsjs",
+  "version": "1.0.0",
+  "description": "simple library node express and sql app",
+  "main": "app.js",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "node ./bin/www"
+  },
+  "repository": {
+    "type": "git",
+    "url": "sql-library-app-project-8-fsjs"
+  },
+  "keywords": [
+    "git",
+    "node",
+    "express",
+    "sql"
+  ],
+  "author": "Daniel J. Garcia-Carmona",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "connect": "^3.6.6",
+    "cookie-parser": "^1.4.4",
+    "debug": "^4.1.1",
+    "express": "^4.16.4",
+    "express-generator": "^4.16.0",
+    "morgan": "^1.9.1",
+    "pug": "^2.0.3",
+    "sequelize": "^4.42.0",
+    "sequelize-cli": "^5.4.0",
+    "sqlite3": "^4.0.6"
+  }
+}
