@@ -1,4 +1,4 @@
-# SQL Library Manager App Project 8 FSJS TechDegree
+# SQL Library Manager Web App Project 8 FSJS TechDegree
 
 ## About
 * a simple library manager that can add, delete and update books within the database.This web application will include pages to list, add, update, and delete books. Techdegree project 8.
