@@ -75,7 +75,7 @@ router.get('/:id', function(request, response, next) {
 })
 /** post, Deletes book. Careful, this can’t be undone **/
 router.post('/:id/delete', (request, response) => {
-    Books.findById(request.params.id)
+    Book.findById(request.params.id)
       .then(Book => {
           if(Book){
               return Book.destroy();

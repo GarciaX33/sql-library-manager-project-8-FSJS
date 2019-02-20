@@ -7,10 +7,6 @@ const connect = require('connect')
 /** start app **/
 const app = express();
 
-const routes = require('./routes/index');
-const books = require('./routes/books');
-app.use('/', routes)
-app.use('/books', books)
 
 /** set to directory views where pug files **/
 app.set('views', path.join(__dirname, 'views'));
@@ -24,10 +20,15 @@ app.use(bodyParser.urlencoded({
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
+const routes = require('./routes/index');
+const books = require('./routes/books');
+app.use('/', routes)
+app.use('/books', books)
+
 /** error status 400**/
 app.use(function(request, response) {
   response.status(400);
-  response.render('page-not-found');
+  response.render('error');
 });
 
 /** error status 500 **/
